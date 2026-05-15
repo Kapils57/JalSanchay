@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0288D1</color>
+    <color name="colorPrimaryDark">#01579B</color>
+    <color name="colorAccent">#4FC3F7</color>
+    <color name="waterBlue">#81D4FA</color>
+    <color name="waterBlueDark">#0288D1</color>
+    <color name="waterBlueLight">#B3E5FC</color>
+    <color name="skyBlue">#E3F4FF</color>
+    <color name="leafGreen">#E8F5E9</color>
+    <color name="tankGray">#B0BEC5</color>
+    <color name="tankDark">#607D8B</color>
+</resources>

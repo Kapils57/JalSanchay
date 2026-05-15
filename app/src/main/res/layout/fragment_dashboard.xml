@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:paddingTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jal Sanchay 💧"
+                android:textColor="#01579B"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every drop saved matters"
+                android:textColor="#0288D1"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Tank section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="24dp">
+
+            <!-- Tank lid -->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="10dp"
+                android:background="@drawable/tank_cap" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:background="#607D8B" />
+
+            <!-- Tank body -->
+            <FrameLayout
+                android:id="@+id/tankContainer"
+                android:layout_width="200dp"
+                android:layout_height="260dp"
+                android:elevation="8dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tank_border" />
+
+                <View
+                    android:id="@+id/viewTankFill"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/water_fill" />
+
+                <!-- Level lines -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:layout_marginTop="52dp" android:background="#33FFFFFF" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:layout_marginTop="52dp" android:background="#33FFFFFF" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:layout_marginTop="52dp" android:background="#33FFFFFF" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:layout_marginTop="52dp" android:background="#33FFFFFF" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTankPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0%"
+                    android:textStyle="bold"
+                    android:textSize="36sp"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="6" />
+
+            </FrameLayout>
+
+            <!-- Tank legs -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="120dp"
+                    android:background="#607D8B" />
+
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="36dp"
+                    android:background="#607D8B" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="8dp"
+                android:background="@drawable/tank_cap" />
+
+        </LinearLayout>
+
+        <!-- Wave background section -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wave_bg"
+            android:paddingTop="60dp"
+            android:paddingBottom="24dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Stats row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/glass_card">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="💧 TODAY"
+                            android:textSize="11sp"
+                            android:textColor="#0288D1"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:id="@+id/tvLitersToday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 L"
+                            android:textSize="26sp"
+                            android:textStyle="bold"
+                            android:textColor="#01579B" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/glass_card">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🏦 TOTAL"
+                            android:textSize="11sp"
+                            android:textColor="#0288D1"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:id="@+id/tvTotalSavings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 L"
+                            android:textSize="26sp"
+                            android:textStyle="bold"
+                            android:textColor="#01579B" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Impact card -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/glass_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌍 IMPACT SCORE"
+                        android:textSize="11sp"
+                        android:textColor="#0288D1"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/tvImpactScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0 household water days"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#01579B" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Based on 135L/person/day (CPHEEO standard)"
+                        android:textSize="11sp"
+                        android:textColor="#0288D1"
+                        android:layout_marginTop="2dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnQuickLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="💧 Log Today's Rainfall"
+                    android:textSize="16sp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_blue" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
