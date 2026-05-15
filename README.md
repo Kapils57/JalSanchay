@@ -120,9 +120,9 @@ app/src/main/java/com/example/jalsanchaytracker/
 
 ## 👨‍💻 Developer
 
-**Aditya Kumar Tiwary**
-- USN: 1MV22EC003
-- Department of ECE, Sir MVIT Bengaluru
+**Kapil Sharma**
+- USN: 1MV22IS047
+- Department of ISE, Sir MVIT Bengaluru
 - Internship at MindMatrix.io CL Infotech Pvt Ltd
 
 ---
