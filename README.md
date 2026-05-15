@@ -77,15 +77,19 @@ Household Water Days = Total Litres ÷ 135
 
 ---
 
-## 🏗️ Project Structure
+# 📂 Project Structure
+
+```text
 app/src/main/java/com/example/jalsanchaytracker/
-├── MainActivity.kt           # Bottom nav + fragment host
-├── SetupActivity.kt          # First-time setup screen
-├── WaterWealthViewModel.kt   # ViewModel + calculation logic
-├── DashboardFragment.kt      # Main dashboard + tank animation
-├── LogFragment.kt            # Rainfall logging
-├── ReportFragment.kt         # Monthly report history
-└── TipsFragment.kt           # Water saving tips
+
+├── MainActivity.kt
+├── SetupActivity.kt
+├── WaterWealthViewModel.kt
+├── DashboardFragment.kt
+├── LogFragment.kt
+├── ReportFragment.kt
+└── TipsFragment.kt
+```
 
 
 ---
